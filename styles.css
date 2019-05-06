@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* ----------------- SETTING THE VIEWPORT ---------------- */
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+@-ms-viewport {
+    width: device-width;
+}
+
+/* Background/Body */
+body {
+    background: #EAEAEA;
+}
+
+/* Text/Font Styling */
+/* FONT FAMILIES / SIZES: 
+font-family: 'Open Sans', sans-serif;
+*/
+p, a, i {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+}
+p {
+    color: #848484;
+}
+a, i {
+    text-decoration: none;
+    color: #DADADA;
+}
+a:hover {
+    text-decoration: none;
+}
+#liked {
+    color: #129AB0;
+}
+i {
+    padding-right: 0.9375rem;
+}
+
+/* Card/Grid Styling */
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.9375rem 1.5625rem;
+}
+.vl {
+    border-left: 1px solid #DADADA;
+    height: 1.5625rem;
+    margin-left: 1.5625rem;
+    margin-right: 0.9375rem;
+}
+.card {
+    background: #FFFFFF;
+    width: 19rem;
+    height: 19rem;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,0.16);
+    border-radius: 0.0625rem;
+}
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1.125rem;
+    margin: 10rem;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+img {
+    object-fit: cover;
+}
+
+
+/* MEDIA QUERIES / RESPONSIVE STYLES: Desktop/Monitor */
+@media only screen and (max-width: 1600px) {
+    .cardGrid {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 8rem;
+    }
+}
+
+/* MEDIA QUERIES / RESPONSIVE STYLES: Desktop/Monitor */
+@media only screen and (max-width: 1250px) {
+    .cardGrid {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 6rem;
+    }
+}
+
+/* MEDIA QUERIES / RESPONSIVE STYLES: iPad/Tablet */
+@media only screen and (max-width: 800px) {
+    .cardGrid {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 4rem;
+    }
+}
+
+/* MEDIA QUERIES / RESPONSIVE STYLES: iPhone 6/7/8 PLUS */
+@media only screen and (max-width: 450px) {
+    .cardGrid {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 1rem;
+    }
+}
